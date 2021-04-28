@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Formulario</title>
+<link rel="stylesheet" type="text/css" href="estilosHTML.css">
+<script src="ejercicio2JavaScript.js"></script>
+</head>
+
+<body>
+<h1>Curso Serbatic</h1>
+<h2>Formulario de registro</h2>
+<form>
+<fieldset>
+<legend>DATOS PERSONALES</legend>
+<div ><label class='label80'>Nombre</label>  <input class='input25' name='nombre' type='text' tabindex='1'> <label>DNI</label><input name="dniNumeros"  onchange="averigua" type="number"><input id="dniletra"  max='99999999' type="text"></div>
+<div><label class = 'label29'>Primer Apellido</label>  <input class='input25' name='primerApellido' type='text' tabindex='2'></div>
+<div><label class = 'label17'>Segundo Apellido</label>  <input class='input25' name='segundoApellido' type='text' tabindex='3'></div>
+<div><label >Fecha de nacimiento</label> <select onclick="cargarDia" name="dia" id="dia"></select></div>
+</fieldset>
+
+<fieldset>
+<legend>DOMICILIO</legend>
+<div ><label class='label35'>Pais</label>  
+<select name="pais">
+<option>Alemania</option>
+<option>Austria</option>
+<option>Bélgica</option>
+<option>Bulgaria</option>
+<option>Chipre</option>
+<option>Croacia</option>
+<option>Dinamarca</option>
+<option>Eslovenia</option>
+<option>España</option>
+<option>Estonia</option>
+<option>Finlancia</option>
+<option>Francia</option>
+<option>Grecia</option>
+<option>Hungria</option>
+<option>Irlanda</option>
+<option>Italia</option>
+<option>Letonia</option>
+<option>Lituania</option>
+<option>Luxemburgo</option>
+<option>Malta</option>
+<option>Países Bajos</option>
+<option>Polonia</option>
+<option>Portugal</option>
+<option>República Checa</option>
+<option>Republica Eslovaca</option>
+<option>Rumanía</option>
+<option>Suecia</option>
+
+
+</select>
+
+</div>
+<div><label>Direccion</label>  <input name='direccion' type='text' tabindex='5'> <label> Codigo Postal</label>  <input name='codigoPostal' type='number'  max='99999' tabindex='6'></div>
+
+<div><label >Localidad</label>  <input name='localidad' type='text' tabindex='7'><label class='label35'> Provincia</label> 
+
+ <select name="Provincia">
+ 
+<option>A Coruña</option>
+<option>Álava</option>
+<option>Albacete</option>
+<option>Alicante</option>
+<option>Almería</option>
+<option>Asturias</option>
+<option>Ávila</option>
+<option>Badajoz</option>
+<option>Baleares</option>
+<option>Barcelona</option>
+<option>Burgos</option>
+<option>Cáceres</option>
+<option>Cádiz</option>
+<option>Cantabria</option>
+<option>Castellón</option>
+<option>Ciudad Real</option>
+<option>Córdoba</option>
+<option>Cuenca</option>
+<option>Girona</option>
+<option>Granada</option>
+<option>Guadalajara</option>
+<option>Gipuzkoa</option>
+<option>Huelva</option>
+<option>Huesca</option>
+<option>Jaén</option>
+<option>La Rioja</option>
+<option>Las Palmas</option>
+<option>León</option>
+<option>Lérida</option>
+<option>Lugo</option>
+<option>Madrid</option>
+<option>Málaga</option>
+<option>Murcia</option>
+<option>Navarra</option>
+<option>Ourense</option>
+<option>Palencia</option>
+<option>Pontevedra</option>
+<option>Salamanca</option>
+<option>Segovia</option>
+<option>Sevilla</option>
+<option>Soria</option>
+<option>Tarragona</option>
+<option>Santa Cruz de Tenerife</option>
+<option>Teruel</option>
+<option>Toledo</option>
+<option>Valencia</option>
+<option>Valladolid</option>
+<option>Vizcaya</option>
+<option>Zamora</option>
+<option>Zaragoza</option>
+ </select>
+ </div></fieldset>
+ 
+ <fieldset>
+ <legend>DATOS DE CONTACTO</legend>
+ <div><label>Teléfono</label>  <input name='telefono' type='number' max='999999999' tabindex='8'></div>
+  <div ><label>Movil</label>  <input name='movil' type='number' max='999999999' tabindex='9'></div>
+   <div ><label>e-mail</label>  <input name='email' type='email' tabindex='10'></div>
+ </fieldset>
+
+ <div><input text-align='center' type="checkbox" id="terminos" name="Terminos" ><label>Acepto el acuerdo de servicios, la declaracion de privacidad y la declaracion de uso de cookies</label></div>
+ 
+ <div><input type="submit" value="Registrar"> <input type="reset" value="Limpiar"></</div>
+</form>
+
+</body>
+</html>
